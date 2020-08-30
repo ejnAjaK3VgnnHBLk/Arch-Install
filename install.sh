@@ -100,4 +100,4 @@ menu () {
     esac
 }
 
-menu;;
+menu
