@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # This script will expect a couple things before running:
 # There are 3 partitions created with a GPT partition table.
 #   - Partition 1: 256MB EFI System partition
@@ -5,7 +7,6 @@
 #   - Partition 3: rest of space root partition
 # It will also assume that the internet connection is working
 # and the partitions are empty. 
-
 
 drivename=/dev/sda
 mntroot=/mnt
@@ -99,3 +100,4 @@ menu () {
     esac
 }
 
+menu;;
